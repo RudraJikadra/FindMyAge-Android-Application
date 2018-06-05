@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rudy.findmyage2.findmyage2.MainActivity">
+
+    <EditText
+        android:id="@+id/etDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter Your Birth Year"
+        android:inputType="number"
+        android:layout_marginTop="68dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/bAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get My Age"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvAge"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp" />
+
+    <TextView
+        android:id="@+id/tvAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorPrimary"
+        android:text="Your Age will show here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDOB" />
+</android.support.constraint.ConstraintLayout>
